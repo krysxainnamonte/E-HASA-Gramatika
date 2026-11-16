@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-HASA GRAMATIKA | Wastong Wika, Mahusay na Pagsulat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <img src="logo.svg" alt="E-HASA GRAMATIKA Logo">
+
+            <h2>
+                E-HASA
+                <strong>GRAMATIKA</strong>
+            </h2>
+        </a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">⌂ Home</a>
+            <a href="#aralin">Aralin</a>
+            <a href="#pagsasanay">Pagsasanay</a>
+            <a href="#pagsusulit">Pagsusulit</a>
+            <a href="#tungkol">Tungkol Dito</a>
+            <a href="pagsusulit.html">Pagsasanay at Pagsusulit</a>
+        </nav>
+
+        <div class="header-right">
+
+            <a href="#progress" class="profile-link">
+                ♟ Aking Progreso
+            </a>
+
+            <div class="search-container">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Maghanap ng aralin..."
+                    aria-label="Maghanap ng aralin"
+                    autocomplete="off"
+                >
+
+                <div id="searchSuggestions" class="search-suggestions" hidden></div>
+            </div>
+
+            <button
+                class="theme-btn"
+                id="themeBtn"
+                type="button"
+                aria-label="Palitan ang tema"
+                title="Dark Mode"
+            >
+                ☼
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="tagline">
+                    WASTONG WIKA. MAHUSAY NA PAGSULAT.
+                </p>
+
+                <h1>
+                    E-HASA
+                    <span>GRAMATIKA</span>
+                </h1>
+
+                <h3>
+                    Hasa ang iyong isip, paunlarin ang iyong pagsulat!
+                </h3>
+
+                <p class="description">
+                    Alamin, unawain, at gamitin nang wasto ang mga
+                    salitang Filipino para sa mas malinaw at mas
+                    mabisang pagpapahayag.
+                </p>
+
+                <a href="#aralin" class="gold-button">
+                    ▶ Simulan ang Pag-aaral →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUICK MENU -->
+        <section class="quick-menu">
+
+            <a href="#aralin" class="quick-item">
+                <span>📚</span>
+                <div>
+                    <h3>Mga Aralin</h3>
+                    <p>Tuklasin ang tamang<br>gamit ng mga salita.</p>
+                </div>
+            </a>
+
+            <a href="#pagsasanay" class="quick-item">
+                <span>☑️</span>
+                <div>
+                    <h3>Pagsasanay</h3>
+                    <p>Subukan ang iyong<br>kaalaman.</p>
+                </div>
+            </a>
+
+            <a href="#pagsusulit" class="quick-item">
+                <span>📝</span>
+                <div>
+                    <h3>Pagsusulit</h3>
+                    <p>Sukatin ang iyong<br>kasanayan.</p>
+                </div>
+            </a>
+
+            <a href="#progress" class="quick-item">
+                <span>🏆</span>
+                <div>
+                    <h3>Mga Tagumpay</h3>
+                    <p>Tingnan ang iyong<br>pag-unlad.</p>
+                </div>
+            </a>
+
+            <a href="#paalala" class="quick-item">
+                <span>💡</span>
+                <div>
+                    <h3>Mga Paalala</h3>
+                    <p>Mga tip at gabay<br>sa pagsulat.</p>
+                </div>
+            </a>
+
+        </section>
+
+
+        <!-- MAIN DASHBOARD -->
+        <main class="dashboard">
+
+
+            <!-- LESSONS -->
+            <section class="card lessons" id="aralin">
+
+                <div class="card-header-1">
+                    <h3>📖 Mga Paksa sa Gramatika</h3>
+                    <a href="#paalala">Tingnan Lahat →</a>
+                </div>
+
+                <div class="lesson-list">
+
+                    <a href="lessons/ng-at-nang.html">
+                        📄 Ng at Nang: Kailan Gagamitin?
+                    </a>
+
+                    <a href="lessons/rin-at-din.html">
+                        📄 Rin at Din: Tamang Paggamit
+                    </a>
+
+                    <a href="lessons/raw-at-daw.html">
+                        📄 Raw at Daw: Pagkakaiba
+                        
+                    </a>
+
+                    <a href="lessons/may-at-mayroon.html">
+                        📄 May at Mayroon
+                        
+                    </a>
+
+                    <a href="lessons/bantas.html">
+                        📄 Wastong Paggamit ng Bantas
+                        
+                    </a>
+
+                    <a href="lessons/pagbuo-ng-pangungusap.html">
+                        📄 Pagbuo ng Pangungusap
+                        
+                    </a>
+
+                    <a href="lessons/bokabularyo.html">
+                        📄 Lalim ng Bokabularyo
+                        
+                    </a>
+
+                    <a href="lessons/kalinawan.html">
+                        📄 Kalinawan ng Nilalaman
+                        
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- CHALLENGE -->
+            <section class="card challenge" id="pagsasanay">
+
+                <div class="card-header">
+                    <p>🧠</p>
+                    <h3>Hamon ang Iyong Isip!</h3>
+                </div>
+
+                <div class="challenge-content">
+
+                    <div class="brain">🧠</div>
+
+                    <div class="challenge-text">
+
+                        <h3>
+                            Handa ka na bang subukan ang ating
+                            mabilisang pagsasanay?
+                        </h3>
+
+                        <p>
+                            Ipakita ang iyong husay sa tamang gamit
+                            ng mga salitang Filipino!
+                        </p>
+
+                        <a href="pagsusulit.html" class="blue-button">
+                            ▶ Simulan ang Quiz
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROGRESS -->
+            <section class="card progress" id="progress">
+
+                <div class="card-header">
+                    <h3>⭐ Aking Progreso</h3>
+                </div>
+
+                <div class="progress-content">
+
+                    <div class="progress-circle" id="progressCircle">
+                        <span id="progressPercent">0%</span>
+                    </div>
+
+                    <div class="progress-info">
+
+                        <h3>Iyong Pag-unlad</h3>
+
+                        <p>
+                            <span id="completedCount">0</span> /
+                            <span id="totalLessons">8</span> na aralin
+                        </p>
+
+                        <div class="progress-bar">
+                            <div id="progressBarFill"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="congrats" id="progressMessage">
+                    🌱 Magsimula sa isang aralin. Bawat hakbang ay pag-unlad!
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- WORD OF THE DAY -->
+        <section class="reminders">
+
+            <div class="section-title">
+
+                <p class="section-label">
+                    SALITA NG ARAW
+                </p>
+
+                <h2 id="wordOfDay">
+                    Mabisa
+                </h2>
+
+                <p id="wordMeaning">
+                    May kakayahang maghatid ng nais na resulta o epekto.
+                </p>
+
+                <p>
+                    <strong>Halimbawa:</strong>
+                    <span id="wordExample">
+                        Mabisa ang kaniyang paraan ng pagpapaliwanag.
+                    </span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEARNING SECTION -->
+        <section class="learning-section" id="pagsusulit">
+
+            <div class="learning-content">
+
+                <p class="section-label">
+                    SUBUKAN ANG IYONG NATUTUHAN
+                </p>
+
+                <h2>
+                    Matuto sa bawat pagsubok.
+                </h2>
+
+                <p>
+                    Pagkatapos ng bawat aralin, sagutan ang mga
+                    pagsasanay upang mas maunawaan ang wastong
+                    paggamit ng wikang Filipino.
+                </p>
+
+            </div>
+
+            <a href="pagsusulit.html" class="gold-button">
+                Simulan ang Pagsasanay at Pagsusulit →
+            </a>
+
+        </section>
+
+
+        <!-- REMINDERS / LESSON PREVIEW -->
+        <section class="reminders" id="paalala">
+
+            <div class="section-title">
+
+                <p class="section-label">
+                    GABAY SA PAGSULAT
+                </p>
+
+                <h2>
+                    Mga Dapat Tandaan
+                </h2>
+
+                <p>
+                    Paunlarin ang iyong kaalaman sa wastong
+                    paggamit ng wikang Filipino.
+                </p>
+
+            </div>
+
+
+            <div class="reminder-container">
+
+                <!-- 01 NG AT NANG -->
+                <a href="lessons/ng-at-nang.html" class="reminder-card">
+                    <span>01</span>
+                    <h3>Ng at Nang</h3>
+                    <p>
+                        Alamin kung kailan ginagamit ang "ng"
+                        at kung kailan ginagamit ang "nang"
+                        sa pangungusap.
+                    </p>
+                </a>
+
+
+                <!-- 02 RIN AT DIN -->
+                <a href="lessons/rin-at-din.html" class="reminder-card">
+                    <span>02</span>
+                    <h3>Rin at Din</h3>
+                    <p>
+                        Unawain ang tuntunin sa pagpili ng
+                        "rin" o "din" batay sa tunog ng
+                        salitang sinusundan nito.
+                    </p>
+                </a>
+
+
+                <!-- 03 RAW AT DAW -->
+                <a href="lessons/raw-at-daw.html" class="reminder-card">
+                    <span>03</span>
+                    <h3>Raw at Daw</h3>
+                    <p>
+                        Pag-aralan ang wastong paggamit ng
+                        "raw" at "daw" sa iba't ibang
+                        pangungusap.
+                    </p>
+                </a>
+
+
+                <!-- 04 MAY AT MAYROON -->
+                <a href="lessons/may-at-mayroon.html" class="reminder-card">
+                    <span>04</span>
+                    <h3>May at Mayroon</h3>
+                    <p>
+                        Matutuhan ang pagkakaiba at tamang
+                        paggamit ng "may" at "mayroon"
+                        sa pagpapahayag.
+                    </p>
+                </a>
+
+
+                <!-- 05 BANTAS -->
+                <a href="lessons/bantas.html" class="reminder-card">
+                    <span>05</span>
+                    <h3>Wastong Paggamit ng Bantas</h3>
+                    <p>
+                        Unawain ang wastong paggamit ng
+                        iba't ibang bantas upang maging
+                        malinaw ang iyong pagsulat.
+                    </p>
+                </a>
+
+
+                <!-- 06 PAGBUO NG PANGUNGUSAP -->
+                <a href="lessons/pagbuo-ng-pangungusap.html" class="reminder-card">
+                    <span>06</span>
+                    <h3>Pagbuo ng Pangungusap</h3>
+                    <p>
+                        Matutuhan ang pagbuo ng malinaw,
+                        wasto, at makabuluhang pangungusap.
+                    </p>
+                </a>
+
+
+                <!-- 07 LALIM NG BOKABULARYO -->
+                <a href="lessons/bokabularyo.html" class="reminder-card">
+                    <span>07</span>
+                    <h3>Lalim ng Bokabularyo</h3>
+                    <p>
+                        Palawakin ang kaalaman sa mga salita at
+                        matutuhan ang wastong pagpili ng mga ito
+                        ayon sa konteksto at layunin ng pagsulat.
+                    </p>
+                </a>
+
+
+                <!-- 08 KALINAWAN NG NILALAMAN -->
+                <a href="lessons/kalinawan.html" class="reminder-card">
+                    <span>08</span>
+                    <h3>Kalinawan ng Nilalaman</h3>
+                    <p>
+                        Linangin ang kakayahang magpahayag ng
+                        malinaw, organisado, at magkakaugnay
+                        na mga ideya sa isang sulatin.
+                    </p>
+                </a>
+
+            </div>
+
+            <p id="noSearchResults" hidden>
+                Walang nahanap na aralin. Subukan ang ibang salita.
+            </p>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="tungkol">
+
+            <div class="about-logo">
+                <img src="logo.svg" alt="E-HASA GRAMATIKA Logo">
+            </div>
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    TUNGKOL SA E-HASA
+                </p>
+
+                <h2>
+                    Hubugin ang angking kasanayan sa gramatika.
+                </h2>
+
+                <p>
+                    Ang E-HASA GRAMATIKA ay isang website na
+                    naglalayong malinang ang kasanayang
+                    panggramatika ng mga mag-aaral sa pamamagitan
+                    ng mga aralin at pagsasanay tungkol sa
+                    wastong paggamit ng wikang Filipino.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-brand">
+
+            <img src="logo.svg" alt="E-HASA GRAMATIKA Logo">
+
+            <span>E-HASA GRAMATIKA</span>
+
+        </div>
+
+        <p>
+            Sama-sama sa pagbuo ng mas mahusay
+            na Pilipinong manunulat.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#aralin">Mga Aralin</a>
+            <a href="#paalala">Mga Paalala</a>
+            <a href="#tungkol">Tungkol Dito</a>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 E-HASA GRAMATIKA. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

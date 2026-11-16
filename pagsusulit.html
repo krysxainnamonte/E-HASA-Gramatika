@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagsasanay at Pagsusulit | E-HASA GRAMATIKA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+
+<header class="quiz-header">
+    <a href="index.html" class="quiz-logo">
+        <img src="logo.svg" alt="E-HASA Logo">
+        <span>E-HASA <strong>GRAMATIKA</strong></span>
+    </a>
+
+    <a href="index.html" class="back-home">
+        <span>←</span> Bumalik sa Home
+    </a>
+</header>
+
+<main class="quiz-main">
+
+    <section class="quiz-intro">
+        <span class="quiz-label">PAGPAPALAWAK NG KASANAYAN</span>
+        <h1>Pagsasanay at <span>Pagsusulit</span></h1>
+        <p>
+            Subukin ang iyong kaalaman sa wastong paggamit ng wikang Filipino.
+            Piliin ang kategorya at sagutin ang mga tanong.
+        </p>
+    </section>
+
+    <section class="quiz-container">
+
+        <div id="categoryScreen" class="category-screen">
+            <div class="section-heading">
+                <h2>Pumili ng Kategorya</h2>
+                <p>Aling aralin ang nais mong subukan?</p>
+            </div>
+
+            <div class="category-grid">
+
+                <button class="category-card" data-category="ng-nang">
+                    <span class="category-icon">📝</span>
+                    <strong>Ng at Nang</strong>
+                    <small>Wastong paggamit ng ng at nang</small>
+                </button>
+
+                <button class="category-card" data-category="rin-din">
+                    <span class="category-icon">📖</span>
+                    <strong>Rin at Din</strong>
+                    <small>Tamang paggamit ng rin at din</small>
+                </button>
+
+                <button class="category-card" data-category="raw-daw">
+                    <span class="category-icon">💬</span>
+                    <strong>Raw at Daw</strong>
+                    <small>Pagpili ng angkop na kataga</small>
+                </button>
+
+                <button class="category-card" data-category="may-mayroon">
+                    <span class="category-icon">📚</span>
+                    <strong>May at Mayroon</strong>
+                    <small>Pagkilala sa wastong gamit</small>
+                </button>
+
+                <button class="category-card" data-category="bantas">
+                    <span class="category-icon">✍️</span>
+                    <strong>Wastong Bantas</strong>
+                    <small>Paglalapat ng mga bantas</small>
+                </button>
+
+                <button class="category-card" data-category="pangungusap">
+                    <span class="category-icon">📑</span>
+                    <strong>Pangungusap</strong>
+                    <small>Pagbuo ng malinaw na pangungusap</small>
+                </button>
+
+                <!-- LALIM NG BOKABULARYO -->
+                <button class="category-card" data-category="bokabularyo">
+                    <div class="category-icon">📚</div>
+                    <h3>Lalim ng Bokabularyo</h3>
+                    <p>Palawakin ang kaalaman sa mga salita at wastong pagpili ng mga ito.</p>
+                    <span>Simulan ang Pagsasanay →</span>
+                </button>
+
+                <!-- KALINAWAN NG NILALAMAN -->
+                <button class="category-card" data-category="kalinawan">
+                    <div class="category-icon">💡</div>
+                    <h3>Kalinawan ng Nilalaman</h3>
+                    <p>Linangin ang kakayahang magpahayag ng malinaw at organisadong ideya.</p>
+                    <span>Simulan ang Pagsasanay →</span>
+                </button>
+
+            </div>
+
+            <div class="all-category-wrap">
+                <button id="allCategoryBtn" class="all-category-btn">
+                    <span>✦</span> Pagsusulit sa Lahat ng Kategorya
+                </button>
+            </div>
+        </div>
+
+        <div id="quizScreen" class="quiz-screen hidden">
+
+            <div class="quiz-top">
+                <div>
+                    <span class="quiz-label">KASALUKUYANG PAGSUSULIT</span>
+                    <h2 id="quizCategoryTitle">Pagsasanay</h2>
+                </div>
+
+                <button id="exitQuizBtn" class="exit-btn">
+                    ✕ Lumabas
+                </button>
+            </div>
+
+            <div class="quiz-progress-info">
+                <span id="questionCounter">Tanong 1 ng 10</span>
+                <span id="progressPercent">10%</span>
+            </div>
+
+            <div class="quiz-progress-bar">
+                <div id="quizProgressFill"></div>
+            </div>
+
+            <div class="question-card">
+                <span class="question-number" id="questionNumber">TANONG 01</span>
+
+                <h3 id="questionText">Dito lalabas ang tanong.</h3>
+
+                <div id="answerOptions" class="answer-options"></div>
+
+                <p id="answerFeedback" class="answer-feedback hidden"></p>
+
+                <div class="question-actions">
+                    <button id="nextQuestionBtn" class="next-question-btn" disabled>
+                        Susunod na Tanong →
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="resultScreen" class="result-screen hidden">
+
+            <div class="result-icon">🏆</div>
+
+            <span class="quiz-label">PAGSUSULIT NA TINAPOS</span>
+            <h2>Magaling! Natapos mo ang pagsusulit.</h2>
+
+            <div class="score-circle">
+                <strong id="finalScore">0</strong>
+                <span id="totalScore">/ 10</span>
+            </div>
+
+            <h3 id="resultMessage">Ipagpatuloy ang pag-aaral!</h3>
+            <p id="resultDescription"></p>
+
+            <div class="result-stats">
+                <div class="result-stat">
+                    <strong id="correctCount">0</strong>
+                    <span>Tamang Sagot</span>
+                </div>
+
+                <div class="result-stat">
+                    <strong id="wrongCount">0</strong>
+                    <span>Maling Sagot</span>
+                </div>
+
+                <div class="result-stat">
+                    <strong id="percentageScore">0%</strong>
+                    <span>Porsiyento</span>
+                </div>
+            </div>
+
+            <div class="result-actions">
+                <button id="reviewBtn" class="review-btn">
+                    Tingnan ang mga Sagot
+                </button>
+
+                <button id="retryBtn" class="retry-btn">
+                    Ulitin ang Pagsusulit
+                </button>
+
+                <button id="chooseCategoryBtn" class="choose-btn">
+                    Pumili ng Ibang Kategorya
+                </button>
+            </div>
+
+        </div>
+
+        <div id="reviewScreen" class="review-screen hidden">
+            <div class="review-heading">
+                <div>
+                    <span class="quiz-label">PAGBUBUOD</span>
+                    <h2>Review ng mga Sagot</h2>
+                </div>
+
+                <button id="backToResultBtn" class="exit-btn">
+                    ← Bumalik
+                </button>
+            </div>
+
+            <div id="reviewList" class="review-list"></div>
+
+            <button id="reviewRetryBtn" class="retry-btn">
+                Ulitin ang Pagsusulit
+            </button>
+        </div>
+
+    </section>
+
+    <section class="quiz-reminder">
+        <span>💡</span>
+        <div>
+            <strong>Tandaan!</strong>
+            <p>
+                Ang pagkakamali ay bahagi ng pagkatuto.
+                Balikan ang mga aralin upang higit pang malinang ang iyong kasanayan.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="quiz-footer">
+    <p>© 2026 E-HASA GRAMATIKA | Hubugin ang Angking Kasanayan sa Gramatika</p>
+</footer>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>

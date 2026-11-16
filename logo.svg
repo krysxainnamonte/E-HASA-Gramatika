@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <!-- Gradient para sa gintong pluma -->
+    <linearGradient id="goldQuill" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E5A229" />
+      <stop offset="50%" stop-color="#F8C25C" />
+      <stop offset="100%" stop-color="#FCD47E" />
+    </linearGradient>
+    <linearGradient id="goldQuillShadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D98D1A" />
+      <stop offset="100%" stop-color="#F2B441" />
+    </linearGradient>
+  </defs>
+
+  <!-- Panlabas na Pabalat at Base ng Libro (Navy Blue #092057) -->
+  <path d="M 42 222 
+           L 76 132 
+           Q 86 128 96 130 
+           L 112 102 
+           Q 155 88 200 112 
+           Q 245 88 288 102 
+           L 304 130 
+           Q 314 128 324 132 
+           L 358 222 
+           Q 360 232 348 234 
+           L 222 234 
+           Q 212 246 200 246 
+           Q 188 246 178 234 
+           L 52 234 
+           Q 40 232 42 222 Z" fill="#092057" />
+
+  <!-- Puting Pahina sa Kaliwa -->
+  <path d="M 62 214 
+           L 115 112 
+           Q 158 98 197 122 
+           L 197 224 
+           Q 155 204 62 214 Z" fill="#FFFFFF" />
+
+  <!-- Ilalim na Layer ng Pahina sa Kaliwa (Shadow effect) -->
+  <path d="M 55 222 
+           L 84 144 
+           L 96 144 
+           L 66 218 
+           Q 152 210 194 228 
+           L 182 230 
+           Q 135 215 55 222 Z" fill="#D4D6D5" />
+
+  <!-- Mga Linya ng Teksto sa Kaliwang Pahina -->
+  <g stroke="#455B86" stroke-width="5" stroke-linecap="round">
+    <line x1="126" y1="132" x2="176" y2="136" />
+    <line x1="120" y1="147" x2="178" y2="151" />
+    <line x1="114" y1="162" x2="176" y2="166" />
+    <line x1="108" y1="177" x2="174" y2="181" />
+    <line x1="102" y1="192" x2="164" y2="195" />
+  </g>
+
+  <!-- Puting Pahina sa Kanan (May Navy Blue na Inner Page) -->
+  <path d="M 338 214 
+           L 285 112 
+           Q 242 98 203 122 
+           L 203 224 
+           Q 245 204 338 214 Z" fill="#FFFFFF" />
+
+  <!-- Madilim na Asul na Bahagi sa Kanang Pahina -->
+  <path d="M 324 206 
+           L 278 120 
+           Q 242 108 208 128 
+           L 208 214 
+           Q 248 197 324 206 Z" fill="#092057" />
+
+  <!-- Mga Linya sa Kanang Pahina -->
+  <g stroke="#8F9EBC" stroke-width="4" stroke-linecap="round" opacity="0.7">
+    <line x1="255" y1="176" x2="294" y2="179" />
+    <line x1="252" y1="190" x2="298" y2="193" />
+  </g>
+
+  <!-- Ilalim na Layer ng Pahina sa Kanan -->
+  <path d="M 345 222 
+           L 316 144 
+           L 304 144 
+           L 334 218 
+           Q 248 210 206 228 
+           L 218 230 
+           Q 265 215 345 222 Z" fill="#D4D6D5" />
+
+  <!-- Gintong Tinta / Binding sa Gitna ng Libro -->
+  <path d="M 188 228 Q 200 222 212 228 L 208 240 Q 200 243 192 240 Z" fill="#E5A229" />
+
+  <!-- Puting Outline sa Paligid ng Pluma para Malinaw ang Pagkakahiwalay sa Libro -->
+  <path d="M 186 224 
+           C 192 150, 232 68, 344 26 
+           C 348 25, 352 28, 350 33 
+           C 340 65, 326 95, 304 118 
+           L 292 122 
+           L 298 128 
+           C 276 154, 244 176, 206 196 
+           L 194 226 Z" fill="#FFFFFF" />
+
+  <!-- Gintong Pluma (Kaliwang Bahagi - Mas Maliwanag) -->
+  <path d="M 191 220 
+           C 198 148, 238 72, 343 32 
+           C 295 85, 245 145, 195 222 Z" fill="url(#goldQuill)" />
+
+  <!-- Gintong Pluma (Kanang Bahagi - Mas Madilim na Ginto at may mga Hiwa) -->
+  <path d="M 195 222 
+           C 245 145, 295 85, 343 32 
+           C 334 62, 320 90, 300 112 
+           L 284 118 
+           L 294 123 
+           C 272 148, 242 170, 204 190 
+           L 195 222 Z" fill="url(#goldQuillShadow)" />
+
+  <!-- Gitnang Tangkay (Rachis) ng Pluma -->
+  <path d="M 190 225 C 228 152, 275 92, 343 32" fill="none" stroke="#FFF4D4" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Mga Detalyeng Guhit sa Balahibo ng Pluma -->
+  <g stroke="#FFF4D4" stroke-width="2" stroke-linecap="round" opacity="0.85">
+    <line x1="238" y1="138" x2="255" y2="105" />
+    <line x1="258" y1="114" x2="276" y2="82" />
+    <line x1="278" y1="92" x2="298" y2="62" />
+    <line x1="226" y1="168" x2="256" y2="152" />
+    <line x1="244" y1="146" x2="274" y2="130" />
+  </g>
+</svg>
