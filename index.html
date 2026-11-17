@@ -14,58 +14,79 @@
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
 
-        <a href="index.html" class="logo">
-            <img src="logo.svg" alt="E-HASA GRAMATIKA Logo">
+<!-- HEADER -->
+<header class="header">
 
-            <h2>
-                E-HASA
-                <strong>GRAMATIKA</strong>
-            </h2>
-        </a>
+    <!-- BURGER BUTTON -->
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Buksan ang navigation"
+        aria-expanded="false"
+    >
+        ☰
+    </button>
 
-        <nav class="navbar">
-            <a href="#home" class="active">⌂ Home</a>
-            <a href="#aralin">Aralin</a>
-            <a href="#pagsasanay">Pagsasanay</a>
-            <a href="#pagsusulit">Pagsusulit</a>
-            <a href="#tungkol">Tungkol Dito</a>
-            <a href="pagsusulit.html">Pagsasanay at Pagsusulit</a>
-        </nav>
+    <a href="index.html" class="logo">
+        <img src="logo.svg" alt="E-HASA GRAMATIKA Logo">
 
-        <div class="header-right">
+        <h2>
+            E-HASA
+            <strong>GRAMATIKA</strong>
+        </h2>
+    </a>
 
-            <a href="#progress" class="profile-link">
-                ♟ Aking Progreso
-            </a>
-
-            <div class="search-container">
-                <input
-                    type="search"
-                    id="searchInput"
-                    placeholder="Maghanap ng aralin..."
-                    aria-label="Maghanap ng aralin"
-                    autocomplete="off"
-                >
-
-                <div id="searchSuggestions" class="search-suggestions" hidden></div>
-            </div>
-
-            <button
-                class="theme-btn"
-                id="themeBtn"
-                type="button"
-                aria-label="Palitan ang tema"
-                title="Dark Mode"
-            >
-                ☼
-            </button>
-
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="mobile-nav-header">
+            <strong>MENU</strong>
+            <button id="closeMenu" type="button" aria-label="Isara ang menu">✕</button>
         </div>
 
-    </header>
+        <a href="#home" class="active">⌂ Home</a>
+        <a href="#aralin">Aralin</a>
+        <a href="#pagsasanay">Pagsasanay</a>
+        <a href="#pagsusulit">Pagsusulit</a>
+        <a href="#tungkol">Tungkol Dito</a>
+        <a href="./pagsusulit.html">Pagsasanay at Pagsusulit</a>
+    </nav>
+
+    <div class="header-right">
+
+        <a href="#progress" class="profile-link">
+            ♟ Aking Progreso
+        </a>
+
+        <div class="search-container">
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Maghanap ng aralin..."
+                aria-label="Maghanap ng aralin"
+                autocomplete="off"
+            >
+
+            <div id="searchSuggestions" class="search-suggestions" hidden></div>
+        </div>
+
+        <button
+            class="theme-btn"
+            id="themeBtn"
+            type="button"
+            aria-label="Palitan ang tema"
+            title="Dark Mode"
+        >
+            ☼
+        </button>
+
+    </div>
+
+</header>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-overlay" id="navOverlay"></div>
 
 
     <main>

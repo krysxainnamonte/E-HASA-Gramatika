@@ -137,6 +137,43 @@ if (searchInput && searchSuggestions) {
 
     });
 
+    
+// ===================================
+// MOBILE NAVIGATION
+// ===================================
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navbar = document.getElementById("navbar");
+        const closeMenu = document.getElementById("closeMenu");
+        const navOverlay = document.getElementById("navOverlay");
+
+        function closeMobileMenu() {
+            if (navbar) navbar.classList.remove("active");
+            if (navOverlay) navOverlay.classList.remove("active");
+
+            if (menuToggle) {
+                menuToggle.setAttribute("aria-expanded", "false");
+            }
+
+            document.body.style.overflow = "";
+        }
+
+        if (menuToggle && navbar && closeMenu && navOverlay) {
+
+            menuToggle.addEventListener("click", function() {
+                navbar.classList.add("active");
+                navOverlay.classList.add("active");
+                menuToggle.setAttribute("aria-expanded", "true");
+                document.body.style.overflow = "hidden";
+            });
+
+            closeMenu.addEventListener("click", closeMobileMenu);
+            navOverlay.addEventListener("click", closeMobileMenu);
+
+           navbar.querySelectorAll("a[href^='#']").forEach(function(link) {
+             link.addEventListener("click", closeMobileMenu);
+});
+        }
 
     // ===================================
     // WORD OF THE DAY
@@ -301,3 +338,5 @@ if (searchInput && searchSuggestions) {
     }
 
 });
+
+

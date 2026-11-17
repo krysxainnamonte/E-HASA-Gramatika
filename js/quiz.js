@@ -46,82 +46,82 @@ const questionBank = {
     },
 
     "rin-din": {
-    title: "Rin at Din",
-    questions: [
-        {
-            question: "Alin ang wastong pangungusap?",
-            options: [
-                "Ako din ay sasama.",
-                "Ako rin ay sasama.",
-                "Ako raw ay sasama rin din.",
-                "Ako din rin ay sasama."
-            ],
-            answer: 1,
-            explanation: "Ginagamit ang 'rin' kapag ang naunang salita ay nagtatapos sa patinig o tunog na w at y."
-        },
-        {
-            question: "Piliin ang tamang salita: Si Mark ___ ay sasali sa paligsahan.",
-            options: [
-                "rin",
-                "din",
-                "nang",
-                "ng"
-            ],
-            answer: 1,
-            explanation: "Ginagamit ang 'din' pagkatapos ng salitang nagtatapos sa katinig, gaya ng Mark."
-        },
-        {
-            question: "Alin ang angkop na salita: Ikaw ___ ang napili.",
-            options: [
-                "din",
-                "rin",
-                "raw",
-                "daw"
-            ],
-            answer: 1,
-            explanation: "Ang salitang 'ikaw' ay nagtatapos sa tunog na w, kaya ginagamit ang 'rin'."
-        }
-    ]
-},
+        title: "Rin at Din",
+        questions: [
+            {
+                question: "Alin ang wastong pangungusap?",
+                options: [
+                    "Ako din ay sasama.",
+                    "Ako rin ay sasama.",
+                    "Ako raw ay sasama rin din.",
+                    "Ako din rin ay sasama."
+                ],
+                answer: 1,
+                explanation: "Ginagamit ang 'rin' kapag ang naunang salita ay nagtatapos sa patinig o tunog na w at y."
+            },
+            {
+                question: "Piliin ang tamang salita: Si Mark ___ ay sasali sa paligsahan.",
+                options: [
+                    "rin",
+                    "din",
+                    "nang",
+                    "ng"
+                ],
+                answer: 1,
+                explanation: "Ginagamit ang 'din' pagkatapos ng salitang nagtatapos sa katinig, gaya ng Mark."
+            },
+            {
+                question: "Alin ang angkop na salita: Ikaw ___ ang napili.",
+                options: [
+                    "din",
+                    "rin",
+                    "raw",
+                    "daw"
+                ],
+                answer: 1,
+                explanation: "Ang salitang 'ikaw' ay nagtatapos sa tunog na w, kaya ginagamit ang 'rin'."
+            }
+        ]
+    },
 
-   "raw-daw": {
-    title: "Raw at Daw",
-    questions: [
-        {
-            question: "Alin ang wastong pangungusap?",
-            options: [
-                "Maganda raw ang tanawin.",
-                "Maganda daw ang tanawin.",
-                "Maganda rin daw raw ang tanawin.",
-                "Maganda nang ang tanawin."
-            ],
-            answer: 0,
-            explanation: "Ginagamit ang 'raw' pagkatapos ng salitang nagtatapos sa patinig o tunog na w at y."
-        },
-        {
-            question: "Piliin ang tamang salita: Uulan ___ mamayang hapon.",
-            options: [
-                "raw",
-                "daw",
-                "rin",
-                "nang"
-            ],
-            answer: 1,
-            explanation: "Ginagamit ang 'daw' pagkatapos ng salitang nagtatapos sa katinig."
-        },
-        {
-            question: "Alin ang angkop na pangungusap?",
-            options: [
-                "Siya raw ang nanalo.",
-                "Siya daw ang nanalo.",
-                "Siya ng ang nanalo.",
-                "Siya nang ang nanalo."
-            ],
-            answer: 0,
-            explanation: "Ang 'siya' ay nagtatapos sa patinig na a, kaya ginagamit ang 'raw'."
-        }
-    ]
-},
+    "raw-daw": {
+        title: "Raw at Daw",
+        questions: [
+            {
+                question: "Alin ang wastong pangungusap?",
+                options: [
+                    "Maganda raw ang tanawin.",
+                    "Maganda daw ang tanawin.",
+                    "Maganda rin daw raw ang tanawin.",
+                    "Maganda nang ang tanawin."
+                ],
+                answer: 0,
+                explanation: "Ginagamit ang 'raw' pagkatapos ng salitang nagtatapos sa patinig o tunog na w at y."
+            },
+            {
+                question: "Piliin ang tamang salita: Uulan ___ mamayang hapon.",
+                options: [
+                    "raw",
+                    "daw",
+                    "rin",
+                    "nang"
+                ],
+                answer: 1,
+                explanation: "Ginagamit ang 'daw' pagkatapos ng salitang nagtatapos sa katinig."
+            },
+            {
+                question: "Alin ang angkop na pangungusap?",
+                options: [
+                    "Siya raw ang nanalo.",
+                    "Siya daw ang nanalo.",
+                    "Siya ng ang nanalo.",
+                    "Siya nang ang nanalo."
+                ],
+                answer: 0,
+                explanation: "Ang 'siya' ay nagtatapos sa patinig na a, kaya ginagamit ang 'raw'."
+            }
+        ]
+    },
 
     "may-mayroon": {
         title: "May at Mayroon",
@@ -238,9 +238,9 @@ const questionBank = {
                 explanation: "Ang 'Nag-aaral si Liza araw-araw' ay nagpapahayag ng buong diwa."
             }
         ]
-    }
+    },
 
-        "bokabularyo": {
+    "bokabularyo": {
         title: "Lalim ng Bokabularyo",
         questions: [
             {
@@ -360,12 +360,7 @@ const questionBank = {
                 explanation: "Ang magkakaugnay na ideya ay tumutulong upang maging organisado, lohikal, at malinaw ang isang sulatin."
             }
         ]
-    },
-
-        "kalinawan": {
-        // dito ang mga tanong sa Kalinawan ng Nilalaman
     }
-    };
 
 };
 
@@ -521,23 +516,14 @@ function showQuestion() {
 
     nextQuestionBtn.disabled = true;
 
-    const letters = ["A", "B", "C", "D"];
+    /* Mga pagpipilian na walang A, B, C, D */
 
     question.options.forEach((option, index) => {
 
         const button = document.createElement("button");
 
         button.className = "answer-option";
-
-        const letter = document.createElement("span");
-        letter.className = "option-letter";
-        letter.textContent = letters[index];
-
-        const text = document.createElement("span");
-        text.textContent = option;
-
-        button.appendChild(letter);
-        button.appendChild(text);
+        button.textContent = option;
 
         button.addEventListener("click", () => {
             selectAnswer(index);
@@ -595,7 +581,7 @@ function selectAnswer(index) {
         answerFeedback.textContent =
             "✓ Tamang sagot! " + question.explanation;
 
-        answerFeedback.classList.add("correct-feedback");
+        answerFeedback.classList.add("feedback-correct");
 
     } else {
         answerFeedback.textContent =
@@ -604,7 +590,7 @@ function selectAnswer(index) {
             question.options[question.answer] +
             ". " + question.explanation;
 
-        answerFeedback.classList.add("wrong-feedback");
+        answerFeedback.classList.add("feedback-wrong");
     }
 
     nextQuestionBtn.disabled = false;
@@ -636,7 +622,7 @@ nextQuestionBtn.addEventListener("click", () => {
 
 
 /* =========================================
-   IPakita ANG RESULTA
+   IPAKITA ANG RESULTA
 ========================================= */
 
 function showResult() {
@@ -806,8 +792,12 @@ function saveQuizResult(result) {
 
     history.push(result);
 
-    localStorage.setItem(
-        "ehQuizHistory",
-        JSON.stringify(history)
-    );
+    try {
+        localStorage.setItem(
+            "ehQuizHistory",
+            JSON.stringify(history)
+        );
+    } catch (error) {
+        console.warn("Hindi na-save ang resulta sa browser:", error);
+    }
 }
